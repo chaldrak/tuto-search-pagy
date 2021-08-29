@@ -1,0 +1,15 @@
+current directory: /home/chaldrak/workspace/tuto_samourais/tuto_29082021/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.8.1/ext/bootsnap
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20210829-9382-12iow87.rb extconf.rb
+creating Makefile
+
+current directory: /home/chaldrak/workspace/tuto_samourais/tuto_29082021/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.8.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/chaldrak/workspace/tuto_samourais/tuto_29082021/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.8.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/chaldrak/workspace/tuto_samourais/tuto_29082021/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.8.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20210829-9382-so75fj/bootsnap

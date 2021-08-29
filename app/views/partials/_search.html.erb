@@ -1,0 +1,6 @@
+<%= form_tag("/employees", method: "get", class:"d-flex") do %>
+  <%= text_field_tag :q, '', placeholder: "Search", class:"form-control me-2" %>
+  <%= button_tag(type: "submit", class: "btn btn-outline-success") do %>
+    <i class="bi bi-search"></i>
+  <% end %>
+<% end %>

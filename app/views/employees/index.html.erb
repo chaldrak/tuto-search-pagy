@@ -1,0 +1,40 @@
+<%= render "partials/header" %>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <%= render "partials/search" %>
+                </div>
+            </div>
+            <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">NOM COMPLET</th>
+                    <th scope="col">SEXE</th>
+                    <th scope="col">POSTE</th>
+                    <th scope="col">ENTREPRISE</th>
+                    <th scope="col">BIOGRAPHIE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @employees.each_with_index do |employee, index|  %>
+                  <tr>
+                    <th scope="row"><%= index + 1 %></th>
+                    <td><%= employee.name %></td>
+                    <td><%= employee.sexe %></td>
+                    <td><%= employee.poste %></td>
+                    <td><%= employee.company %></td>
+                    <td><%= employee.bio %></td>
+                  </tr>
+                  <% end %>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
