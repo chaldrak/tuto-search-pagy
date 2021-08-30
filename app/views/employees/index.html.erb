@@ -9,7 +9,7 @@
                     <%= render "partials/search" %>
                 </div>
             </div>
-            <table class="table mt-4">
+            <table class="table mt-4 table-success table-striped table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">N°</th>
@@ -33,6 +33,9 @@
                   <% end %>
                 </tbody>
               </table>
+              <div class="d-flex justify-content-center mt-5 mb-5">
+                <%= pagy_nav(@pagy).html_safe %>
+              </div>
         </div>
 
         <div class="col-md-1"></div>
